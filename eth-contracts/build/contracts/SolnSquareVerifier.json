@@ -1,0 +1,216 @@
+{
+  "contractName": "SolnSquareVerifier",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "placeholder",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.5+commit.47a71e8f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"placeholder\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/SolnSquareVerifier.sol\":\"SolnSquareVerifier\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/ERC721Mintable.sol\":{\"keccak256\":\"0x03371e271f3d3b79f9ba24323f87edd91376e5553c76fadf4e2b4ec79ad21af5\",\"urls\":[\"bzzr://9089a8b2cf500cb78bda99ce301f5d5916c7d1d1db1d8c32974b503320979f20\"]},\"/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/Oraclize.sol\":{\"keccak256\":\"0xe5ebe286b4624095629f76c6ac8dbad3cb305fbdb43fff09e4eebed35a05b49c\",\"urls\":[\"bzzr://f48ebdff8df1cabbd7749c5eb818a6c54a6ba92956a850736bdcfbc9f53f9ffd\"]},\"/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/SolnSquareVerifier.sol\":{\"keccak256\":\"0x218d3378930d5560c7c3b788f6307abe38712197cbd49ac950e423ffd1290586\",\"urls\":[\"bzzr://323cefdd7df8d31cc7607b2a32b86e7660618b607318bc9e56616b59c0b789b7\"]},\"/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/node_modules/openzeppelin-solidity/contracts/drafts/Counters.sol\":{\"keccak256\":\"0x5be8533c5950173dc2b77b75108fae6e6c5449aedadde3385ba457394aad2384\",\"urls\":[\"bzzr://8ab3b1e3d023aafb8a2d127de323b74567084e821b955b5f543e67fe964b1a6b\"]},\"/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzzr://292843005e754e752644f767477ec5ad7a1ffc91ddb18c38b8079c62f3993cad\"]},\"/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x042048c375daca04b31e31c91bbae912b84b5eb818c4e31b2deb530fd2305342\",\"urls\":[\"bzzr://2f8b9c142d30b43eab7b77dbcc632a51987eeb62371777d765e9311c0b3c4c13\"]},\"/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/node_modules/openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0x1a8e5072509c5ea7365eb1d48030b9be865140c8fb779968da0a459a0e174a11\",\"urls\":[\"bzzr://4e1d23731da27602b8c552e54fb9976dadf8cf46a8f90a3c8c1b85fe044618b9\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50606380601d6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80639e75143c14602d575b600080fd5b60336035565b005b56fea165627a7a723058202f3a3eb2476866e50fb540cd6791e4e7314ea05f4b1bff5ffbc38ce938afb3ba0029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80639e75143c14602d575b600080fd5b60336035565b005b56fea165627a7a723058202f3a3eb2476866e50fb540cd6791e4e7314ea05f4b1bff5ffbc38ce938afb3ba0029",
+  "sourceMap": "124:81:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;124:81:3;;;;;;;",
+  "deployedSourceMap": "124:81:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;124:81:3;;;;;;;;;;;;;;;;;;;159:43;;;:::i;:::-;;;:::o",
+  "source": "pragma solidity >=0.4.21 <0.6.0;\n\nimport \"./ERC721Mintable.sol\";\n\n// contract SolnSquareVerifier is MyERC721PropertyToken {\ncontract SolnSquareVerifier {\n\n    function placeholder() pure public {\n\n    }\n\n}\n\n\n// TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>\n\n\n\n// TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class\n\n\n\n// TODO define a solutions struct that can hold an index & an address\n\n\n// TODO define an array of the above struct\n\n\n// TODO define a mapping to store unique solutions submitted\n\n\n\n// TODO Create an event to emit when a solution is added\n\n\n\n// TODO Create a function to add the solutions to the array and emit the event\n\n\n\n// TODO Create a function to mint new NFT only after the solution has been verified\n//  - make sure the solution is unique (has not been used before)\n//  - make sure you handle metadata as well as tokenSuplly\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "sourcePath": "C:/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/SolnSquareVerifier.sol",
+  "ast": {
+    "absolutePath": "/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/SolnSquareVerifier.sol",
+    "exportedSymbols": {
+      "SolnSquareVerifier": [
+        7463
+      ]
+    },
+    "id": 7464,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7457,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "absolutePath": "/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/ERC721Mintable.sol",
+        "file": "./ERC721Mintable.sol",
+        "id": 7458,
+        "nodeType": "ImportDirective",
+        "scope": 7464,
+        "sourceUnit": 1131,
+        "src": "34:30:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7463,
+        "linearizedBaseContracts": [
+          7463
+        ],
+        "name": "SolnSquareVerifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 7461,
+              "nodeType": "Block",
+              "src": "194:8:3",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 7462,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "placeholder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7459,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "179:2:3"
+            },
+            "returnParameters": {
+              "id": 7460,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "194:0:3"
+            },
+            "scope": 7463,
+            "src": "159:43:3",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7464,
+        "src": "124:81:3"
+      }
+    ],
+    "src": "0:986:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/SolnSquareVerifier.sol",
+    "exportedSymbols": {
+      "SolnSquareVerifier": [
+        7463
+      ]
+    },
+    "id": 7464,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7457,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "absolutePath": "/C/Users/RL/Documents/Udacity_BC/Projects/Capstone_real_estate_mkt/Blockchain-Capstone-master/eth-contracts/contracts/ERC721Mintable.sol",
+        "file": "./ERC721Mintable.sol",
+        "id": 7458,
+        "nodeType": "ImportDirective",
+        "scope": 7464,
+        "sourceUnit": 1131,
+        "src": "34:30:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7463,
+        "linearizedBaseContracts": [
+          7463
+        ],
+        "name": "SolnSquareVerifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 7461,
+              "nodeType": "Block",
+              "src": "194:8:3",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 7462,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "placeholder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7459,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "179:2:3"
+            },
+            "returnParameters": {
+              "id": 7460,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "194:0:3"
+            },
+            "scope": 7463,
+            "src": "159:43:3",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7464,
+        "src": "124:81:3"
+      }
+    ],
+    "src": "0:986:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.5+commit.47a71e8f.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xBfAC50D1092138C0216F56A6D4Bf1A88588295FD",
+      "transactionHash": "0x5bd47b63ad2c8d25d99008b02b072fbd92e2c91106834c4e30b0213c5e6f4af0"
+    }
+  },
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-11-13T14:29:17.613Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
