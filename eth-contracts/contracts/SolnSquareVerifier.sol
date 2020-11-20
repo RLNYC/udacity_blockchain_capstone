@@ -1,18 +1,17 @@
-pragma solidity >=0.5.2 <0.6.0;
+pragma solidity >=0.5.0 <0.6.0;
 
 import "./ERC721Mintable.sol";
-
 
 // TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class
 contract SolnSquareVerifier is MyERC721PropertyToken {
 
-    Verifier private verifierContract;
+    SquareVerifier private verifierContract;
 
     constructor(address verifierAddress, string memory name, string memory symbol)
         MyERC721PropertyToken(name, symbol)
         public
     {
-      verifierContract = Verifier(verifierAddress);
+      verifierContract = SquareVerifier(verifierAddress);
     }
 
     // TODO define a solutions struct that can hold an index & an address
@@ -32,7 +31,6 @@ contract SolnSquareVerifier is MyERC721PropertyToken {
 
     // TODO Create an event to emit when a solution is added
     event SolutionAdded(uint256 solutionIndex, address indexed solutionAddress);
-
 
 
     // TODO Create a function to add the solutions to the array and emit the event
@@ -58,23 +56,25 @@ contract SolnSquareVerifier is MyERC721PropertyToken {
     }
 
 
+  // TODO Create a function to mint new NFT only after the solution has been verified
+  //  - make sure the solution is unique (has not been used before)
+  //  - make sure you handle metadata as well as tokenSuplly
+  function mintNewNFT(uint a, uint b, address to) public
+    {
+        bytes32 solutionHash = keccak256(abi.encodePacked(a, b));
 
-// TODO Create a function to mint new NFT only after the solution has been verified
-//  - make sure the solution is unique (has not been used before)
-//  - make sure you handle metadata as well as tokenSuplly
-
-
+        require(solutions[solutionHash].solutionExists == true, "Solution does not exist");
+        require(solutions[solutionHash].minted == false, "Token is already minted for this solution");
+        require(solutions[solutionHash].solutionAddress == msg.sender, "Only solution address can use it to mint a token");
+        super.mint(to, solutions[solutionHash].solutionIndex);
+        solutions[solutionHash].minted = true;
+    }
 
 }
 
 
-
-
-  
-
-
 // TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>
-contract Verifier {
+contract SquareVerifier {
     function verifyTx(
         uint[2] memory a,
         uint[2][2] memory b,
