@@ -4,5 +4,5 @@ var SolnSquareVerifier = artifacts.require("SolnSquareVerifier");
 
 module.exports = async(deployer) => {
   await deployer.deploy(verifier);
-  await deployer.deploy(SolnSquareVerifier, verifier.address, "PROP_ERC721Token", "PROP721");
+  await deployer.deploy(SolnSquareVerifier, verifier.address, "UPROP_ERC721Token", "UPROP721");
 };

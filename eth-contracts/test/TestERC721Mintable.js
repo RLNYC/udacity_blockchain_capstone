@@ -5,6 +5,7 @@ contract('TestERC721Mintable', accounts => {
     const account_one = accounts[0];
     const account_two = accounts[1];
     const account_three = accounts[2];
+    const account_four = accounts[3];
     const symbol = "PROP721";
     const name = "PropertyToken721";
     const n = 5; // index of last token id => total number of tokens is 6
@@ -62,6 +63,41 @@ contract('TestERC721Mintable', accounts => {
         it('should return contract owner', async function () { 
             let owner = await this.contract.getOwner.call();
             assert.equal(owner, account_one,"Owner is not correct");
+        })
+
+    });
+
+    describe('Able to transfer tokens', function () {
+        beforeEach(async function () { 
+            this.contract = await ERC721MintableComplete.new(name, symbol, {from: account_one});
+
+            try{
+            // TODO: mint multiple tokens
+                for (let i =0; i<=n; i++){
+                    let status = await this.contract.mint(account_two, i, {from: account_one});
+                }    
+            }catch(e){
+                console.log("Fail to mint token");
+            }
+        })
+
+
+        it('Able to approve an operator for all tokens transfer', async function () { 
+
+            await this.contract.setApprovalForAll(account_three, true, {from: account_two});
+            let result = await this.contract.isApprovedForAll.call(account_two, account_three);
+            assert.equal(result, true,"Fail to approve operator for all token transfer");
+        })
+
+        it('Operator is able to transfer a token', async function () { 
+
+            await this.contract.setApprovalForAll(account_three, true, {from: account_two});
+
+            await this.contract.transferFrom(account_two, account_four, 0, {from: account_three});
+
+            let ownerAddress = await this.contract.ownerOf(0);
+
+            assert.equal(ownerAddress, account_four,"Operator fails to transfer token");
         })
 
     });
