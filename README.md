@@ -31,7 +31,7 @@ Implements Succinct Zero-knowledge proofs via Zokrates.
 
 ## Quick Start Deploying to Ganache and Testing
 
-1. cd into project repro & install modules
+1. cd into project directory & install modules
 
         cd Blockchain-Capstone-master
 
@@ -50,7 +50,9 @@ Implements Succinct Zero-knowledge proofs via Zokrates.
         truffle migrate --network development --reset
 
 ## Testing contracts
-<b>Make sure you are in "eth-contracts" dirctory</b>: cd eth-contracts
+<b>Make sure you are in "eth-contracts" dirctory</b>: 
+  
+    cd eth-contracts
 
 Testing ERC721 minting functionality of tokens and transfer of tokens.
     
@@ -64,9 +66,9 @@ Testing ERC721 token minting with zkSnarks.
 
     truffle test ./test/TestSolnSquareVerifier.js
 
-    ![Passing TestERC721Mintable test](./screenshots/passing_mintable.jpg)
-    ![Passing TestSquareVerifier test](./screenshots/passing_verifier.jpg)
-    ![Passing TestSolnSquareVerifier test](./screenshots/passing_solutionVerifier.jpg)
+![Passing TestERC721Mintable test](./screenshots/passing_mintable.jpg)
+![Passing TestSquareVerifier test](./screenshots/passing_verifier.jpg)
+![Passing TestSolnSquareVerifier test](./screenshots/passing_solutionVerifier.jpg)
 
 ---
 
