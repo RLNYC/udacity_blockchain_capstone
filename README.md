@@ -5,7 +5,7 @@
 - All tokens are listed on OpeanSea
     - MarketPlace Storefront: https://testnets.opensea.io/collection/uprop-erc721token
 
-  ![alt text](./READMEPIC/storefront.png)
+  ![alt text](./screenshots/opensea_mktplace.jpg)
 
 
 ## Versions
@@ -49,7 +49,7 @@ Implements Succinct Zero-knowledge proofs via Zokrates.
 
         truffle migrate --network development --reset
 
-#### Testing contracts
+## Testing contracts
 <b>Make sure you are in "eth-contracts" dirctory</b>: cd eth-contracts
 
 Testing ERC721 minting functionality of tokens and transfer of tokens.
@@ -64,13 +64,13 @@ Testing ERC721 token minting with zkSnarks.
 
     truffle test ./test/TestSolnSquareVerifier.js
 
-    ![Passing TestERC721Mintable test](./screenshots/pass_flightSurety_test.jpg)
-    ![Passing TestSquareVerifier test](./screenshots/pass_oracle_test.jpg)
-    ![Passing TestSolnSquareVerifier test](./screenshots/pass_airline_test.jpg)
+    ![Passing TestERC721Mintable test](./screenshots/passing_mintable.jpg)
+    ![Passing TestSquareVerifier test](./screenshots/passing_verifier.jpg)
+    ![Passing TestSolnSquareVerifier test](./screenshots/passing_solutionVerifier.jpg)
 
 ---
 
-## Quick Start Deploying to Rinkeby
+## Deploying to Rinkeby
 
 1. Make a new project with Infura
 
@@ -78,13 +78,9 @@ Testing ERC721 token minting with zkSnarks.
 
 2. Setup truffle-config
 
-    2.1 set infuraKey
+    2.1 set Rinkeby mnemonic from metamask within HDWalletProvider
 
-    2.2 set mnemonic from metamask within HDWalletProvider
-
-    2.3 set rinkeby endpoint within HDWalletProvider
-
-    2.4 set from address
+    2.2 set infura endpoint for Rinkeby within HDWalletProvider
 
 3. Migrate to rinkeby
 
@@ -101,7 +97,7 @@ Testing ERC721 token minting with zkSnarks.
 
 
 
-## 5 Tokens on OpenSea are sold
+## Tokens on OpenSea are sold
 
   https://testnets.opensea.io/assets/0x1898e139aa999ba3d7650b0f74e2d6e53a41fdda/0/
   https://testnets.opensea.io/assets/0x1898e139aa999ba3d7650b0f74e2d6e53a41fdda/1/
