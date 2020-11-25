@@ -29222,7 +29222,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-25T13:36:17.322Z",
+  "updatedAt": "2020-11-25T19:12:47.979Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {
